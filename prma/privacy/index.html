@@ -52,6 +52,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <h2>P1. In brief</h2>
 <ul>
 <li>Using Prma takes one tap on <strong>Start</strong>. There is no email, phone number, password or real name to hand over.</li>
+<li>Community runs on Prma&#39;s server. When Community first opens, Prma gives this install a random member ID, and what you share in Community is stored on the server so other painters can see it. Your studio (stages you haven&#39;t posted, voice notes, paints, tool results and credits) stays on your device.</li>
 <li>Colors are read from your photos by code built into Prma. Your pictures, notes and voice recordings are never passed to an outside AI company.</li>
 <li>Prma carries no advertising networks and no third-party analytics or tracking kits, and nothing you put in Prma is sold.</li>
 <li>Anything you add can be removed on its own, and <strong>Clear All Data</strong> removes all of it in one step.</li>
@@ -60,10 +61,43 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <p><strong>Paintings and stages.</strong> A painting has a title and, if you pick one, a medium. Each stage you add to it holds a photo (from the camera or your library), the six dominant colors Prma reads from that photo as HEX values with their share of the image, a short label, a written note of up to 280 characters, and, if you want one, a spoken note of up to 60 seconds. A stage you begin but don&#39;t finish is kept as a draft so you can pick it up later.</p>
 <p><strong>Your paints and tool results.</strong> The Paint box holds up to 24 paints that you name and color yourself; the Mix tool builds its suggestions only from those paints. When you pay credits for a tool (Values levels, Mix, Compare check, Process sheet or the 2048px export), the result is kept so reopening it for the same photo costs nothing.</p>
 <p><strong>Credits.</strong> Prma keeps your current credit balance and a running history of every credit added or spent: packs bought, the 20 welcome credits added the first time you tap <strong>Start</strong>, tools paid for, and tips sent or received.</p>
-<p><strong>Your Community presence.</strong> The name (up to 30 characters) and bio (up to 120 characters) you set in <strong>Me</strong>, the posts, comments and direct messages you write, the posts you like and save, the painters you follow or block, the posts you remove from your feed, your report tickets, and the date you accepted the Community Terms.</p>
+<p><strong>Your Community presence.</strong> The random member ID Prma creates for this install; the name (up to 30 characters) and bio (up to 120 characters) you set in <strong>Me</strong>, and the handle made from your name; the posts, comments and direct messages you write; the posts you like and save; the painters you follow or block; the tips you send; the posts and comments you remove from your feed; your report tickets; and the date you accepted the Community Terms.</p>
 <p><strong>App state.</strong> Whether you have tapped <strong>Start</strong> and whether you have finished the introduction screens, so Prma opens on the right screen.</p>
 <h2>P3. Where it lives and who can see it</h2>
-<p>All of the above is written to Prma&#39;s own protected storage on your iPhone or iPad: its files, its database and its preferences. Other apps cannot read that storage. It stays there until you remove it (see P9).</p>
+<p><strong>On your device.</strong> Paintings and stages you have not posted, voice notes, drafts, paints, tool results, credits and credit history, the posts and comments you remove from your feed, your report tickets, your Community Terms acceptance and app state are written to Prma&#39;s own protected storage on your iPhone or iPad. Other apps cannot read that storage. It stays there until you remove it (see P9).</p>
+<p><strong>On Prma&#39;s Community server.</strong> Community only works if other painters can see what you share, so these items are stored on Prma&#39;s server: your member ID, name, handle and bio; the posts you publish (a copy of each posted stage photo, reduced to at most 1600 pixels on its longer side, with its colors, label and note, plus the caption, tags and medium); your comments and direct messages; the posts you like and save; the painters you follow and block; the tips you send; and the reports you file. The server is run for us by Supabase, Inc., a hosting provider, in its data center in Sydney, Australia. Supabase stores and delivers this data on our instructions only. Everything travels between Prma and the server over an encrypted HTTPS connection.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Who can see it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name, handle, bio, posts, comments, likes and follows</td>
+<td>Prma members, inside Prma</td>
+</tr>
+<tr>
+<td>Posted stage photos</td>
+<td>Prma members, inside Prma; the image file can also be opened by anyone who has its exact link</td>
+</tr>
+<tr>
+<td>Direct messages</td>
+<td>You and the painter you are writing to</td>
+</tr>
+<tr>
+<td>Saves and blocks</td>
+<td>Only you</td>
+</tr>
+<tr>
+<td>Tips</td>
+<td>The painter you tip receives them as credits; tip totals show on posts</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>The Prma team</td>
+</tr>
+</tbody></table>
 <p>A stage stays private to you until you post it. Posting a stage to Community puts its photo, colors, label, note, caption, tags and medium on the Community feed and on your profile inside Prma, so post only what you are happy for other painters to see.</p>
 <h2>P4. Camera, microphone, photos and notifications</h2>
 <p>Each permission is requested through Apple&#39;s own system prompt, at the moment you first reach the feature that needs it. Any answer can be changed later in the iOS Settings app.</p>
@@ -115,9 +149,9 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <h3>P5.2 What a photo with a face is used for</h3>
 <p>Three things only: reading the six dominant colors of the picture; showing it where you put it (a stage, a painting, a Process sheet, an export or a Community post); and running the studio tool you open on it (Grid, Values, Mix or Compare). Prma does not look for faces, recognise who anyone is, estimate age, gender, mood or any other trait, and does not use such photos for advertising or profiling.</p>
 <h3>P5.3 Who else can see it</h3>
-<p>No outside company receives these photos, AI and analytics providers included. Other painters see a photo only after you post the stage it belongs to in Community. It reaches your Photos library only when you save an export or a Process sheet yourself.</p>
+<p>Other painters see a photo only after you post the stage it belongs to in Community. When you do, a copy of that photo is stored on Prma&#39;s Community server, which Supabase, Inc. runs for us as a hosting provider (see P3); Supabase keeps and delivers the file on our instructions and does not analyse it. No other outside company receives these photos, AI and analytics providers included. A photo reaches your Photos library only when you save an export or a Process sheet yourself.</p>
 <h3>P5.4 How long it stays and where</h3>
-<p>The photo sits in Prma&#39;s protected storage on your device for as long as the stage, painting or post that holds it exists. Deleting that stage or painting removes its photos from Prma straight away; so do <strong>Me → Settings → Clear All Data</strong> and deleting the app.</p>
+<p>A photo you have not posted stays only in Prma&#39;s protected storage on your device, for as long as the stage or painting that holds it exists; deleting that stage or painting removes it straight away. The copy of a posted photo stays on Prma&#39;s server until you delete the post, which removes it from the server straight away. Deleting a stage or painting on your device does not remove a post you have already published. <strong>Me → Settings → Clear All Data</strong> removes both: first the copies on the server, then everything on your device.</p>
 <h3>P5.5 Completeness of this section</h3>
 <p>P5.1 to P5.4 together are the whole of Prma&#39;s explanation of how images that may show a face are collected, used, disclosed, shared and retained. Prma holds no facial data beyond what is described here.</p>
 <h2>P6. Outside AI services</h2>
@@ -126,17 +160,17 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <p>Credit packs are consumable purchases handled entirely by Apple&#39;s App Store. Your card number, billing address and Apple ID password stay with Apple; Prma only receives Apple&#39;s confirmation that a purchase went through, then adds the credits to your balance. The pack list and credit rules are in Part 2 of the <a href="../terms/">Terms of Use</a>.</p>
 <h2>P8. Keeping Community safe</h2>
 <ul>
-<li><strong>Text check.</strong> Before Prma saves a post, comment, message, profile, painting title, stage label, note or paint name, it compares the text with a list of abusive, hateful, sexual and spam words, including disguised spellings. Matching text is not saved or shown.</li>
-<li><strong>Reporting.</strong> Reporting a post, comment, painter or conversation hides it from you on the spot, blocks its author for you and creates a report ticket. Prma then offers an email draft to <a href="mailto:PrmaPainting@gmail.com">PrmaPainting@gmail.com</a> with the ticket number, the kind of content, its ID, the author&#39;s handle, the reason you picked, any note you add and the time. The draft goes nowhere unless you send it from your mail app. Once it arrives, the Prma team looks at it within 24 hours.</li>
+<li><strong>Text check.</strong> Before Prma saves a post, comment, message, profile, painting title, stage label, note or paint name, it compares the text with a list of abusive, hateful, sexual and spam words, including disguised spellings, and Prma&#39;s server runs the same check again on Community text. Matching text is not saved or shown.</li>
+<li><strong>Reporting.</strong> Reporting a post, comment, painter or conversation hides it from you on the spot, blocks its author for you, and sends a report ticket to the Prma team&#39;s moderation queue on the server: the ticket number, the kind of content, its ID, the author&#39;s member ID, the reason you picked, any note you add and the time. Prma also offers an email draft to <a href="mailto:PrmaPainting@gmail.com">PrmaPainting@gmail.com</a> if you want to add more; it goes nowhere unless you send it from your mail app. The Prma team looks at every report within 24 hours.</li>
 <li><strong>Blocking and hiding.</strong> A blocked painter&#39;s posts, comments and messages disappear for you, and <strong>Remove from feed</strong> hides a single post. <strong>Me → Blocked members</strong> lets you undo a block.</li>
 <li><strong>Age.</strong> Community is for adults aged 18 and over.</li>
 </ul>
 <h2>P9. Removing your information</h2>
 <ul>
-<li><strong>One thing at a time.</strong> A stage, painting, post, comment or paint can be deleted from its own menu. Deleting a painting takes its stages, photos, notes, voice notes and tool results with it.</li>
-<li><strong>Everything at once.</strong> In <strong>Me → Settings → Clear All Data</strong>, type <code>DELETE</code> to confirm. Prma then erases every painting, stage photo, note, voice note, draft, paint, tool result and export record; your credit balance and credit history; your profile; your Community posts, comments, messages, likes, saves, follows, blocks, hidden posts and report tickets; your Community Terms acceptance; and your session. Community then looks the way it does on a fresh install.</li>
+<li><strong>One thing at a time.</strong> A stage, painting, post, comment or paint can be deleted from its own menu. Deleting a post removes it and its photos from Prma&#39;s server. Deleting a painting takes its stages, photos, notes, voice notes and tool results off your device; posts you already published stay until you delete them.</li>
+<li><strong>Everything at once.</strong> In <strong>Me → Settings → Clear All Data</strong>, type <code>DELETE</code> to confirm. Prma first has the server delete your member ID and everything stored with it: your profile, your posts and their photos, comments, messages, likes, saves, follows, blocks and tips. Reports you filed are kept for moderation, with your member ID removed. This step needs an internet connection; if the server can&#39;t be reached, nothing is deleted and Prma asks you to try again. Prma then erases every painting, stage photo, note, voice note, draft, paint, tool result and export record; your credit balance and credit history; your hidden posts and comments and report tickets; your Community Terms acceptance; and your session. Community then looks the way it does on a fresh install.</li>
 <li><strong>End Session</strong> (<strong>Me → Settings → End Session</strong>) only takes you back to the start screen. Nothing is deleted.</li>
-<li><strong>Deleting Prma</strong> from your device erases its data too. Credits lost this way cannot be brought back.</li>
+<li><strong>Deleting Prma</strong> from your device erases what is on the device, and credits lost this way cannot be brought back. It does not remove your Community content from Prma&#39;s server: use Clear All Data first, or write to <a href="mailto:PrmaPainting@gmail.com">PrmaPainting@gmail.com</a> with your handle and we will delete it within 30 days.</li>
 </ul>
 <h2>P10. Age limit</h2>
 <p>Prma is made for adults aged 18 and over and is not aimed at children. Prma does not knowingly gather information from anyone younger. If you think someone under 18 is using Prma, please tell us at <a href="mailto:PrmaPainting@gmail.com">PrmaPainting@gmail.com</a>.</p>
