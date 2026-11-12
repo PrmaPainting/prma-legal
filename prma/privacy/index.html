@@ -66,7 +66,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <p><strong>App state.</strong> Whether you have tapped <strong>Start</strong>, whether you have finished the introduction screens and whether you chose to browse as a guest, so Prma opens on the right screen; and your sign-in session, kept in the iOS Keychain.</p>
 <h2>P3. Where it lives and who can see it</h2>
 <p><strong>On your device.</strong> Paintings and stages you have not posted, voice notes, drafts, paints, tool results, credits and credit history, the posts and comments you remove from your feed, your report tickets, your Community Terms acceptance and app state are written to Prma&#39;s own protected storage on your iPhone or iPad. Other apps cannot read that storage. It stays there until you remove it (see P9).</p>
-<p><strong>On Prma&#39;s Community server.</strong> Community only works if other painters can see what you share, so these items are stored on Prma&#39;s server: your member ID and, once you sign in, your email address or Apple user identifier; your name, handle and bio; the posts you publish (a copy of each posted stage photo, reduced to at most 1600 pixels on its longer side, with its colors, label and note, plus the caption, tags and medium); your comments and direct messages; the posts you like and save; the painters you follow and block; the tips you send; and the reports you file. The server is run for us by Supabase, Inc., a hosting provider, in its data center in Sydney, Australia. Supabase stores and delivers this data on our instructions only, and Prma&#39;s server sends the sign-in code emails. Everything travels between Prma and the server over an encrypted HTTPS connection.</p>
+<p><strong>On Prma&#39;s Community server.</strong> Community only works if other painters can see what you share, so these items are stored on Prma&#39;s server: your member ID and, once you sign in, your email address or Apple user identifier; your name, handle and bio; the posts you publish (a copy of each posted stage photo, reduced to at most 1600 pixels on its longer side, with its colors, label and note; the video you add to a post, if any, which you pick from your photo library, up to 60 seconds long and converted on your device to an MP4 of at most 1280 × 720 pixels, together with a still frame from it and that frame&#39;s colors; plus the caption, tags and medium); your comments and direct messages; the posts you like and save; the painters you follow and block; the tips you send; and the reports you file. The server is run for us by Supabase, Inc., a hosting provider, in its data center in Sydney, Australia. Supabase stores and delivers this data on our instructions only, and Prma&#39;s server sends the sign-in code emails. Everything travels between Prma and the server over an encrypted HTTPS connection.</p>
 <table>
 <thead>
 <tr>
@@ -83,8 +83,8 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <td>Prma members, inside Prma</td>
 </tr>
 <tr>
-<td>Posted stage photos</td>
-<td>Prma members, inside Prma; the image file can also be opened by anyone who has its exact link</td>
+<td>Posted stage photos and videos</td>
+<td>Prma members, inside Prma; the file can also be opened by anyone who has its exact link</td>
 </tr>
 <tr>
 <td>Direct messages</td>
@@ -103,7 +103,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <td>The Prma team</td>
 </tr>
 </tbody></table>
-<p>A stage stays private to you until you post it. Posting a stage to Community puts its photo, colors, label, note, caption, tags and medium on the Community feed and on your profile inside Prma, so post only what you are happy for other painters to see.</p>
+<p>A stage stays private to you until you post it. Posting a stage to Community puts its photo, colors, label, note, caption, tags and medium on the Community feed and on your profile inside Prma; a video you add is shown and can be played and saved the same way, sound included. Post only what you are happy for other painters to see. Members can view posted pictures full screen and save posted pictures and videos to their own Photos library.</p>
 <h2>P4. Camera, microphone, photos and notifications</h2>
 <p>Each permission is requested through Apple&#39;s own system prompt, at the moment you first reach the feature that needs it. Any answer can be changed later in the iOS Settings app.</p>
 <table>
@@ -129,9 +129,9 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 </tr>
 <tr>
 <td>Photos (add only)</td>
-<td>You first save an export or a Process sheet</td>
-<td>Writing that one image into your Photos library</td>
-<td>The image is not saved; nothing else changes</td>
+<td>You first save an export, a Process sheet, or a post image or video</td>
+<td>Writing that one image or video into your Photos library</td>
+<td>It is not saved; nothing else changes</td>
 </tr>
 <tr>
 <td>Microphone</td>
@@ -154,7 +154,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 <h3>P5.2 What a photo with a face is used for</h3>
 <p>Three things only: reading the six dominant colors of the picture; showing it where you put it (a stage, a painting, a Process sheet, an export or a Community post); and running the studio tool you open on it (Grid, Values, Mix or Compare). Prma does not look for faces, recognise who anyone is, estimate age, gender, mood or any other trait, and does not use such photos for advertising or profiling.</p>
 <h3>P5.3 Who else can see it</h3>
-<p>Other painters see a photo only after you post the stage it belongs to in Community. When you do, a copy of that photo is stored on Prma&#39;s Community server, which Supabase, Inc. runs for us as a hosting provider (see P3); Supabase keeps and delivers the file on our instructions and does not analyse it. No other outside company receives these photos, AI and analytics providers included. A photo reaches your Photos library only when you save an export or a Process sheet yourself.</p>
+<p>Other painters see a photo only after you post the stage it belongs to in Community. When you do, a copy of that photo is stored on Prma&#39;s Community server, which Supabase, Inc. runs for us as a hosting provider (see P3); Supabase keeps and delivers the file on our instructions and does not analyse it. No other outside company receives these photos, AI and analytics providers included. A photo or video reaches your Photos library only when you save it yourself: an export, a Process sheet, or a post image or video you choose to save.</p>
 <h3>P5.4 How long it stays and where</h3>
 <p>A photo you have not posted stays only in Prma&#39;s protected storage on your device, for as long as the stage or painting that holds it exists; deleting that stage or painting removes it straight away. The copy of a posted photo stays on Prma&#39;s server until you delete the post, which removes it from the server straight away. Deleting a stage or painting on your device does not remove a post you have already published. <strong>Me → Settings → Delete Account</strong> (<strong>Clear All Data</strong> for guests) removes both: first the copies on the server, then everything on your device.</p>
 <h3>P5.5 Completeness of this section</h3>
@@ -173,8 +173,8 @@ footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 2
 </ul>
 <h2>P9. Removing your information</h2>
 <ul>
-<li><strong>One thing at a time.</strong> A stage, painting, post, comment or paint can be deleted from its own menu. Deleting a post removes it and its photos from Prma&#39;s server. Deleting a painting takes its stages, photos, notes, voice notes and tool results off your device; posts you already published stay until you delete them.</li>
-<li><strong>Everything at once.</strong> In <strong>Me → Settings → Delete Account</strong> (shown as <strong>Clear All Data</strong> while you browse as a guest), type <code>DELETE</code> to confirm. Prma first has the server delete your account and member ID and everything stored with them: your email address or Apple user identifier; your profile and profile photo, your posts and their photos, comments, messages, likes, saves, follows, blocks and tips. If you signed in with Apple, Prma also asks Apple to revoke Prma&#39;s access to your Apple ID. Reports you filed are kept for moderation, with your member ID removed. This step needs an internet connection; if the server can&#39;t be reached, nothing is deleted and Prma asks you to try again. Prma then erases every painting, stage photo, note, voice note, draft, paint, tool result and export record; your credit balance and credit history; your hidden posts and comments and report tickets; your Community Terms acceptance; and your session. Community then looks the way it does on a fresh install.</li>
+<li><strong>One thing at a time.</strong> A stage, painting, post, comment or paint can be deleted from its own menu. Deleting a post removes it and its photos and video from Prma&#39;s server. Deleting a painting takes its stages, photos, notes, voice notes and tool results off your device; posts you already published stay until you delete them.</li>
+<li><strong>Everything at once.</strong> In <strong>Me → Settings → Delete Account</strong> (shown as <strong>Clear All Data</strong> while you browse as a guest), type <code>DELETE</code> to confirm. Prma first has the server delete your account and member ID and everything stored with them: your email address or Apple user identifier; your profile and profile photo, your posts and their photos and videos, comments, messages, likes, saves, follows, blocks and tips. If you signed in with Apple, Prma also asks Apple to revoke Prma&#39;s access to your Apple ID. Reports you filed are kept for moderation, with your member ID removed. This step needs an internet connection; if the server can&#39;t be reached, nothing is deleted and Prma asks you to try again. Prma then erases every painting, stage photo, note, voice note, draft, paint, tool result and export record; your credit balance and credit history; your hidden posts and comments and report tickets; your Community Terms acceptance; and your session. Community then looks the way it does on a fresh install.</li>
 <li><strong>Sign Out</strong> (<strong>Me → Settings → Sign Out</strong>) ends the session on this device and takes you back to the sign-in screen. Nothing is deleted: your account and Community content stay on the server, and your paintings and credits stay on the device. Sign in again with the same email address or Apple ID to return.</li>
 <li><strong>Deleting Prma</strong> from your device erases what is on the device, and credits lost this way cannot be brought back. It does not remove your Community content from Prma&#39;s server: use Delete Account first, or write to <a href="mailto:PrmaPainting@gmail.com">PrmaPainting@gmail.com</a> with your handle and we will delete it within 30 days.</li>
 </ul>
